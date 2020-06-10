@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_top"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/background">
+
+        <com.hq.hqmusic.Lrc.LrcView
+            android:id="@+id/lrcview_main"
+            android:layout_width="fill_parent"
+            android:layout_height="640dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="TextView" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_bottom2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include
+            android:id="@+id/layout_playbar2"
+            layout="@layout/play_bar2" />
+    </LinearLayout>
+
+</RelativeLayout>
